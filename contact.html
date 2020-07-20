@@ -81,25 +81,27 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <form name="sentMessage" id="contactForm" novalidate>
+       <form action="https://formspree.io/xzbjknov" method="POST">
+        <input type="hidden" name="_next" value="https://carlosalemanr.github.io/"/>
+        <input type="hidden" name="_language" value="es" />
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Name</label>
-              <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Porfavor ingresa tu nombre.">
+              <input type="text" name="name" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Porfavor ingresa tu nombre.">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Email Address</label>
-              <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Porfavor ingresa tu email.">
+              <input type="email" name="_replyto" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Porfavor ingresa tu email.">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Message</label>
-              <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Porfavor escribe tu mensaje."></textarea>
+              <textarea rows="5" name="messages" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Porfavor escribe tu mensaje."></textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -152,7 +154,6 @@
 
   <!-- Contact Form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
   <!-- Scripts -->
   <script src="js/clean-blog.min.js"></script>
